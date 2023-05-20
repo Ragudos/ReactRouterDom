@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --primary-color: #CD201F;
+    --secondary-color: #0C134F;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--secondary-color);
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(250, 255, 255);
+    min-height: 100vh;
+}
+
+button,
+a {
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+a {
+    color: rgb(250, 255, 255);
+}
+
+.main_navbar a[aria-current="page"] {
+    background-color: var(--primary-color);
+}
+
+.sub_navbar a[aria-current="page"] {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.tv_shows nav a[aria-current="page"] {
+    color: var(--primary-color);
+}
+
+.tv_shows {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 1.5rem 1rem;
+}
+
+.tv_shows .container {
+    border: 1px solid white;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    gap: 0.5rem;
+}
+
+main {
+    padding: 0.5rem 1rem;
+}
+
+p {
+    margin-top: 0.5rem;
+    text-align: justify;
+}
